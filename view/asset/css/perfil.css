@@ -1,0 +1,812 @@
+/*NAV*/
+*{
+  font-family: 'Poppins', sans-serif;
+}
+#wrapper {
+    overflow-x: hidden;
+    background-color: rgb(242, 243, 247);
+ }
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+  background-color: #385BA2;
+  color: #fff;
+}
+
+#sidebar-wrapper .sidebar-heading{
+  padding: 08px 15px;
+
+
+}
+#sidebar-wrapper .sidebar-heading img{
+  /*padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;*/
+  max-width: 200px;
+  margin: auto;
+
+}
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+ /* background-image: url("../img/bg.svg");
+  background-repeat: no-repeat;*/
+}
+
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+.navbar{
+    background-color: #D4DFF5;
+}
+
+.list-group-item{
+    background-color: #385BA2;
+    color: #fff;
+}
+
+
+#wrapper .btn-get-started-sesion {
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #f5f5f5;
+  margin: auto;
+}
+#wrapper .btn-get-started {
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #f5f5f5;
+
+}
+
+#wrapper .btn-sesion{
+  background-color: #5488F0;
+  border: none;
+}
+#wrapper .btn-sesion:hover{
+  background-color: #274070;
+}
+.submenu ul{
+  background-color: #E3F3FF;
+  padding: 0;
+}
+.submenu ul li{
+  list-style:none;
+  position: relative;
+  display: block;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  background-color: rgb(248, 249, 250);
+  padding-left: 35px;
+}
+.submenu ul li a{
+  text-decoration: none;
+  color: #031D5A
+}
+
+.submenu-personal{
+  display: none;
+}
+.submenu-operaciones{
+  display: none;
+}
+.submenu-misOp{
+  display: none;
+}
+.submenu-wallet{
+  display: none;
+}
+.submenuBlock{
+  display: block;
+  transition-property: all;
+  transition-duration: 0.5s
+}
+
+.activo{
+  background-color: rgb(248, 249, 250) !important;
+  color: #274070 !important;
+}
+.no-activo{
+  background-color: #385BA2 !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+
+/*DATOS PERSONALES*/
+
+#perfil .tab-content{
+  background-color: #fff;
+  border-radius: 0 0px .42rem .42rem;
+  -webkit-box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+  -moz-box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+  box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+  padding: 25px 0;
+  border-color: 1px solid #dee2e6;
+  min-height: 60vh;
+}
+
+#perfil .tab-content .form-group label{
+  font-size: 14px;
+  color: #274070;
+}
+
+#perfil .tab-content .form-group input[type=text], .form-group input[type=date], .form-group input[type=number], .form-group input[type=email]{
+  font-size: 13px;
+  background-color: transparent;
+  border: none !important;
+  border-bottom: 2px solid #ACACAC !important;
+  border-radius: 0px ;
+}
+
+#perfil .tab-content .botonera button{
+  padding: 3px 6px;
+  float: right;
+  margin-left: 5px;
+}
+#perfil .btn-get-started-pass {
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #f5f5f5;
+  border: none;
+}
+
+#perfil .btn-pass{
+  background-color: #385BA2;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  font-size: 12px;
+
+}
+#perfil .btn-pass:hover{
+  background-color: #385BA2;
+}
+#perfil .tab-content .botonera .container-img {
+  min-width: 100%;
+  margin: auto;
+  text-align: -webkit-center;
+}
+#perfil .tab-content .botonera .container-img .img{
+  width:200px; 
+  height:170px; 
+  background-color: white;
+  border-radius: 25px;
+}
+
+#perfil .tab-content .botonera .input-file-container{
+  position: relative;
+  color: #707070;
+  border:1px solid #707070;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 8px 0px rgb(218, 218, 218);
+  -moz-box-shadow: 0px 0px 8px 0px rgb(218, 218, 218);
+  box-shadow: 0px 0px 8px 0px rgb(218, 218, 218);
+
+}
+#perfil .tab-content .botonera .input-file-container .input-file{
+  position: absolute;
+  top: 0; 
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  max-width: 50px;
+}
+#perfil .tab-content .botonera .input-file-container label{
+  cursor: pointer;
+  font-size: 12px;
+}
+
+
+/*DATOS BANCARIOS*/
+#bancos .card{
+  border-radius: .42rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+  -moz-box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+  box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+}
+#bancos .card .card-header{
+  border-radius: .42rem .42rem 0px 0px;
+  color: #385BA2;
+}
+#bancos span{
+  font-size: 14px;
+}
+#bancos .estado{
+  float: right;
+  color: #666;
+}
+#bancos .card-body{
+  padding: 25px 10px;
+}
+
+#bancos .card-body label{
+  font-size: 14px;
+  color: #274070;
+}
+#bancos .card-body input{
+  font-size: 14px;
+  background-color: transparent;
+  border: none !important;
+  border: none;
+  border-radius: 0px ;
+  padding: 0px;
+}
+
+#bancos .card-body .botonera button{
+  padding: 3px 6px;
+  float: right;
+  margin-left: 5px;
+}
+
+#bancos .botonera .btn-get-started-agg {
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #f5f5f5;
+  border: none;
+}
+
+#bancos .botonera .btn-agg{
+  background-color: #385BA2;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  float: right;
+}
+#bancos .botonera .btn-agg:hover{
+  background-color: #385BA2;
+}
+
+
+/*DEPOSITOS*/
+#depositos h5{
+  font-weight: bold;
+  color: #274070;
+  text-transform: uppercase;
+}
+#depositos .card{
+  border-radius: .42rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+  -moz-box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+  box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+}
+#depositos .card-body{
+  padding: 25px 10px;
+}
+
+#depositos .card-body label{
+  font-size: 14px;
+  color: #274070;
+}
+#depositos .card-body .form-login{
+  font-size: 13px;
+  background-color: transparent;
+  border: none !important;
+  border-bottom: 2px solid #ACACAC !important;
+  border-radius: 0px ;
+}
+
+#depositos .card-body .botonera {
+  padding: 3px 6px;
+  float: right;
+  margin-left: 5px;
+}
+
+#depositos .botonera .btn-get-started-agg {
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #f5f5f5;
+  border: none;
+}
+
+#depositos .botonera .btn-agg{
+  background-color: #385BA2;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  float: right;
+}
+#depositos .botonera .btn-agg:hover{
+  background-color: #385BA2;
+}
+
+/*--------------------------------------------------------------
+# Cripto Section
+--------------------------------------------------------------*/
+
+
+#cripto .img-cripto{
+  margin: auto;
+}
+#cripto .img-cripto img{
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+#cripto .cotizacion h4{
+  font-size: 18px !important;
+  text-transform: uppercase;
+  font-style: bold;
+  color: #44596A;
+
+
+}
+#cripto .cotizacion h5 span{
+  font-style: italic;
+
+}
+
+#cripto .cotizacion h5{
+  font-size: 11px !important;
+  text-transform: uppercase;
+  font-style: bold;
+  margin-bottom: 0;
+
+}
+#cripto .cotizacion .compra span{
+  font-size: 11px;
+  color:#031D5A;
+
+}
+/*   styles para compra*/
+ #compra .colVenta{
+  height: 100px;
+  background-color: #1B97C7;
+}
+
+#compra .card{
+  padding: 20px;
+  border-radius: .42rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+  -moz-box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+  box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+}
+
+#compra .price{
+  font-size: 30px;
+  color: #031D5A;
+}
+#compra .estado{
+  float: right;
+  color: #fff;
+}
+#compra .card-body{
+  padding: 25px 10px;
+}
+
+#compra .card-body label{
+  font-size: 14px;
+}
+#compra .card-body input{
+  font-size: 14px;
+  background-color: transparent;
+  border: none !important;
+  border: none;
+  border-radius: 0px ;
+  padding: 0px;
+}
+
+#compra .card-body .botonera button{
+  padding: 3px 6px;
+  float: right;
+  margin-left: 5px;
+}
+
+#compra .focus{
+  border: 2px solid #5488F0;
+}
+
+#compra .card .calculadora select{
+  border: none;
+  font-size: 30px;
+  color: #031D5A;
+  font-weight: 700;
+}
+
+#compra .card .calculadora select option{
+  font-size: 12px;
+}
+
+#compra .card .calculadora input{
+  font-size: 25px;
+  background-color: transparent;
+  border: none !important;
+  border-bottom: 2px solid #ACACAC !important;
+  border-radius: 0px ;
+  width: 55%;
+}
+#compra .card .calculadora .container-btn{
+ text-align: center;
+}
+
+#compra .card .calculadora .container-btn .btn-cancelar{
+  color: #385BA2;
+  background-color: transparent;
+
+}
+#compra .card .calculadora .container-btn .btn-cancelar:hover{
+  color: #031D5A;
+}
+
+#compra .card .calculadora .container-btn .btn-siguiente{
+  color:#fff;
+  background-color: #385BA2;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+}
+#compra .card .calculadora .container-btn .btn-siguiente:hover{
+  background-color: #031D5A;
+}
+
+
+/*   estilos para ventas*/
+#venta .colVenta{
+  height: 100px;
+  background-color: #1B97C7;
+}
+
+#venta .card{
+  padding: 20px;
+  border-radius: .42rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+  -moz-box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+  box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+}
+
+#venta .price{
+  font-size: 30px;
+  color: #031D5A;
+}
+#venta .estado{
+  float: right;
+  color: #fff;
+}
+#venta .card-body{
+  padding: 25px 10px;
+}
+
+#venta .card-body label{
+  font-size: 14px;
+}
+#venta .card-body input{
+  font-size: 14px;
+  background-color: transparent;
+  border: none !important;
+  border: none;
+  border-radius: 0px ;
+  padding: 0px;
+}
+
+#venta .card-body .botonera button{
+  padding: 3px 6px;
+  float: right;
+  margin-left: 5px;
+}
+
+#venta .focus{
+  border: 2px solid #274070;;
+}
+
+#venta .card .calculadora .moneda{
+  border: none;
+  font-size: 30px;
+  color: #031D5A;
+  font-weight: 700;
+}
+
+#venta .card .calculadora select option{
+  font-size: 12px;
+}
+
+#venta .card .calculadora .number-calculadora{
+  font-size: 25px;
+  background-color: transparent;
+  border: none !important;
+  border-bottom: 2px solid #ACACAC !important;
+  border-radius: 0px ;
+  width: 55%;
+}
+
+
+#venta .card .calculadora .container-btn .btn-cancelar{
+  color: #385BA2;
+  background-color: transparent;
+
+}
+#venta .card .calculadora .container-btn .btn-cancelar:hover{
+  color: #031D5A;
+}
+
+#venta .card .calculadora .container-btn .btn-siguiente{
+  color:#fff;
+  background-color: #385BA2;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  border:none;
+}
+#venta .card .calculadora .container-btn .btn-siguiente:hover{
+  background-color: #031D5A;
+}
+
+#venta .btn-get-started-agg {
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #f5f5f5;
+  border: none;
+}
+
+#venta .btn-agg{
+  background-color: #385BA2;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  float: right;
+}
+#venta.btn-agg:hover{
+  background-color: #385BA2;
+}
+/*--------------------------------------------------------------
+# mis operaciones
+--------------------------------------------------------------*/
+#misOperaciones h5{
+  font-weight: bold;
+  color: #274070;
+  text-transform: uppercase;
+}
+#misOperaciones .card{
+  border-radius: .42rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+  -moz-box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+  box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+}
+
+#misOperaciones .card-body label{
+  font-size: 14px;
+  color: #274070;
+}
+#misOperaciones .card-body input[type=date], .card-body select, .card-body input[type=search], .card-body input[type=number]{
+  font-size: 14px;
+  background-color: transparent;
+  border: none !important;
+  border: none;
+  border-radius: 0px ;
+  padding: 0px;
+  color: #000;
+  border-bottom: 1px solid #000 !important;
+}
+
+#misOperaciones .btn-get-started-filtro {
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #f5f5f5;
+  cursor: pointer;
+  border: none;
+}
+
+#misOperaciones .btn-filtro{
+  background-color: #385BA2;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+}
+#misOperaciones .btn-filtro:hover{
+  background-color: #284378;
+}
+
+#misOperaciones .btn-get-started-extracciones {
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #f5f5f5;
+  cursor: pointer;
+  border: none;
+}
+#misOperaciones .btn-extraciones{
+  background-color: #385BA2;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+}
+#misOperaciones .btn-extraciones:hover{
+  background-color: #284378;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# wallet
+--------------------------------------------------------------*/
+#wallet h5{
+  font-weight: bold;
+  color: #274070;
+  text-transform: uppercase;
+}
+#wallet .card{
+  border-radius: .42rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+  -moz-box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+  box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+}
+
+#wallet .card-body label{
+  font-size: 14px;
+  color: #274070;
+}
+#wallet .card-body input[type=date], .card-body select, .card-body input[type=search], .card-body input[type=text]{
+  font-size: 14px;
+  background-color: transparent;
+  border: none !important;
+  border: none;
+  border-radius: 0px ;
+  padding: 0px;
+  color: #000;
+  border-bottom: 1px solid #000 !important;
+}
+
+#wallet .btn-get-started-filtro {
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #f5f5f5;
+  cursor: pointer;
+  border: none;
+}
+
+#wallet .btn-filtro{
+  background-color: #385BA2;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+}
+#wallet .btn-filtro:hover{
+  background-color: #284378;
+}
+
+#wallet .btn-get-started-wallet {
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #f5f5f5;
+  cursor: pointer;
+  border: none;
+}
+#wallet .btn-wallet{
+  background-color: #385BA2;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+}
+#wallet .btn-wallet:hover{
+  background-color: #284378;
+}
+
+.btn-siguiente{
+  color:#fff;
+  background-color: #385BA2 !important;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  border:none;
+}
+ .btn-siguiente:hover{
+  background-color: #031D5A;
+  color: #fff;
+}
+
+ .btn-get-started-agg {
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #f5f5f5;
+  border: none;
+}
+
+.btn-nuevo{
+  color:#fff;
+  background-color: #385BA2;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+  border:none;
+}
+ .btn-nuevo:hover{
+  background-color: #031D5A;
+  color: #fff;
+}
+
+ .btn-get-started-nuevo {
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 20px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #f5f5f5;
+  border: none;
+}
+
